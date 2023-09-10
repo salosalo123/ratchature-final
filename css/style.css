@@ -1,0 +1,205 @@
+header {
+  /* background-color: #191a19; */
+  width: 100%;
+  height: 158px;
+  position: fixed;
+  z-index: 1000;
+}
+.sections {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+  /* height: 800px; */
+}
+.header {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.logo {
+  border-radius: 5%;
+  width: 250px;
+  height: 80px;
+  margin-top: 10px;
+}
+.nav {
+  width: 328px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+.burger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-icon .bar {
+  height: 3px;
+  width: 25px;
+  background-color: #333;
+  margin: 4px 0;
+}
+
+@media screen and (max-width: 600px) {
+  .burger-icon {
+    display: flex;
+    margin-left: 20px;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.show {
+    display: block;
+    margin-left: 20px;
+  }
+
+  .mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+
+  .mobile-menu a {
+    text-decoration: none;
+    margin-right: 100px;
+  }
+}
+main {
+  height: 1200px;
+  background-color: aqua;
+}
+
+/* footer */
+/* styles.css */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-social img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.footer-contact p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* 2 */
+/* styles.css */
+footer {
+  background-color: #d8991b71;
+  height: 900px;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.social-links {
+  flex: 1;
+  text-align: center;
+}
+
+.social-icon {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.contact-info {
+  flex: 1;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+/* call */
+.contact-container {
+  max-width: 600px;
+  margin: 100px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+.contact-options {
+  margin-top: 20px;
+}
+
+.contact-options p {
+  margin-bottom: 10px;
+}
+
+.contact-options a {
+  color: #333;
+  text-decoration: none;
+}
+
+/* map */
+#map {
+  height: 400px;
+  width: 500px;
+  background-color: antiquewhite;
+}
