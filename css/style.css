@@ -1,3 +1,17 @@
+
+.sections {
+  max-width: 1900px;
+  width: 100%;
+  margin: 0 auto;
+  /* height: 800px; */
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+
+/* header */
 header {
   /* background-color: #191a19; */
   width: 100%;
@@ -5,94 +19,176 @@ header {
   position: fixed;
   z-index: 1000;
 }
-.sections {
-  max-width: 1728px;
-  width: 100%;
-  margin: 0 auto;
-  /* height: 800px; */
-}
-.header {
-  width: 100%;
-  height: 96px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: fixed;
-  background-color: #fff;
-  z-index: 1000;
-}
-
-.logo {
-  border-radius: 5%;
-  width: 250px;
-  height: 80px;
-  margin-top: 10px;
-}
-.nav {
-  width: 328px;
-  height: 20px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 24px;
-}
-.burger-icon {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.burger-icon .bar {
-  height: 3px;
-  width: 25px;
-  background-color: #333;
-  margin: 4px 0;
-}
-
-@media screen and (max-width: 600px) {
-  .burger-icon {
-    display: flex;
-    margin-left: 20px;
-  }
-
-  .mobile-menu {
-    display: none;
-  }
-
-  .mobile-menu.show {
-    display: block;
-    margin-left: 20px;
-  }
-
-  .mobile-menu ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .mobile-menu li {
-    margin-bottom: 10px;
-  }
-
-  .mobile-menu a {
-    text-decoration: none;
-    margin-right: 100px;
-  }
-}
-main {
-  height: 1200px;
-  background-color: aqua;
-}
-
-/* footer */
-/* styles.css */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #e27f58;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logopict{
+ width: 130px;
+ height: 50px;
+ border-radius: 5px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.burger-icon, .close-icon {
+  cursor: pointer;
+  font-size: 24px;
+  line-height: 1;
+ 
+}
+
+.burger-act{
+  display: none;
+}
+.bar {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 6px auto;
+  transition: 0.4s;
+}
+
+.close-icon {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.active-li{
+  color: #45a049;
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .burger-act{
+      display: block;
+  }
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #5e935d;
+      width: 100%;
+      padding: 10px 20px;
+      gap: 5px;
+      
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .menu.active #burger-icon {
+      display: none;
+  }
+
+  .menu.active #close-icon {
+      display: block;
+  }
+}
+/* section 1 */
+
+.section-1{
+  width: 100%;
+  height: 900px;
+  background-color: #457ba0;
+}
+
+/* .section-1{
+font-family: Arial, sans-serif;
+margin: 0;
+display: flex;
+justify-content: left;
+align-items: center;
+height: 100vh;
+background-color: #f4f4f4; 
+} */
+
+.slide-container {
+  position: relative;
+  width: 300px;
+  height: 200%;
+}
+
+.slide {
+  position: absolute;
+  left: -180px;
+  top: 200;
+  width: 300px;
+  background-color: #db6f0b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: left 2.0s;
+}
+
+.slide:hover {
+  left: 0;
+}
+
+.contact, .social {
+  display: none;
+}
+
+.contact.active, .social.active {
+  display: block;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  gap: 10px;
+}
+
+.social ul li {
+  margin-bottom: 10px;
+  
+}
+
+.social ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+ 
+}
+
+/* section 2 */
+
+.section-2{
+  width: 100%;
+  height: 900px;
+  background-color: #a367cd;
+}
+
+
+/* footer */
+
+footer {
+  background-color: #d8991b71;
+  height: 200px;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .footer-social img {
@@ -105,15 +201,7 @@ footer {
   font-size: 16px;
 }
 
-/* 2 */
-/* styles.css */
-footer {
-  background-color: #d8991b71;
-  height: 900px;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
+
 
 .footer-container {
   display: flex;
@@ -201,9 +289,4 @@ form button:hover {
   flex-direction: row;
   justify-content: space-between;
 }
-/* map */
-#map {
-  height: 400px;
-  width: 500px;
-  background-color: antiquewhite;
-}
+
