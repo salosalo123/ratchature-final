@@ -29,9 +29,26 @@
           <li><a href="./tour.html">ტურები</a></li>
           <li><a href="./hotels.html">სასტუმროები</a></li>
           <li><a href="./others.html">სხვა</a></li>
-          <li><a href=".section-footer">კონტაქტი</a></li>
+          <li class="register-btn"><a href="#">Register</a></li>
         </ul>
     </nav>
+
+    <div class="registration-form" id="registrationForm">
+        <div class="close-btn" onclick="closeForm()">X</div>
+        <h2>Register</h2>
+        <form action="#">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+   
+
     </header>
 
     <!-- main section -->
@@ -41,16 +58,20 @@
      <div class="div-section1">
         <div class="left-div">
             <div class="tltle">
-               <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quidem porro tenetur perferendis soluta! Sed doloremque ducimus amet voluptate qui cumque, quo quasi obcaecati natus et, libero earum sit quibusdam!</h1>
-               <p class="title-paragrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut sapiente architecto quia similique velit, consectetur magni! Possimus, quia iste ducimus beatae fugiat hic natus perferendis alias, aut, amet voluptates?</p>
+               <h1>იმოგზაურე RatchaTour - თან ერთად</h1>
+               <p class="title-paragrap">რაჭა ხომ ჩვენი ყველას სიყვარულია. <br><br> რაჭა თავის ადგილმდებარეობითა და ისტორიით, მარტივად ნუსხავს უცხოელ ტურისტებსა და შიდა ექსკურსანტებს.
+
+                რაჭაში არაჩვეულებრივი კლიმატია 4 -ვე სეზონზე სამოგზაუროდ,  რაც ხელის შემწყობი ფაქტორია ტურიზმის განვითარებისთვის. მინდა გირჩიოთ ადგილები, სადაც მოახერხებთ როგორც მოგზაურობას და რაჭის ღირსშესანიშნაობების ნახვას, ასევე შეძლებთ დაისვენოთ კომფორტულად.
+                
+                 აქ არაერთი მონასტერი და ციხესიმაგრეა, თითოეული მათგანი ძველი ისტორიისა და ტრადიციის მატარებელია. <br>
+                 ასევე თქვენ შეგიძლიათ ჩვენი საიტის საშუალბით შესთავაზოთ დამსვენებლებს თქვენი პროდუქტი, ეს იქნება სასტუმრო თუ ნებისმიერი მომსახურების სფერო. <br>
+                 <br>გამოგვყევით რაჭაში სამოგზაუროდ  ...
+                </p>
             </div>
             <div class="video">
               <iframe width="560" height="315" src="https://www.youtube.com/embed/4UjaZqPa5JU?si=sz2_cEeZPLWrs5mN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
-  <div class="saidbar">
-
-  </div>
 
 </div>
 
@@ -61,7 +82,53 @@
     <section class="section-2 sections ">
 
     </section>
-    
+    <div class="container-upload">
+      <div class="content-upload">
+        <h2>განათავსეთ თქვენი პროდუქტი</h2>
+        <p>შავსეთ ცარიელი ველები</p>
+        <button id="openForm-upload">ატვირთეთ პროდუქტი</button>
+      </div>
+      <div class="slide-container-upload">
+        <div class="slide-content-upload">
+          <div class="close-button-upload" id="closeButton-upload">X</div>
+          <h2>დეტალები თქვენი პროდუქტის შესახებ</h2>
+          <form action="#">
+            <label for="apartmentName">პროდუქტის სახელი</label>
+            <input
+              type="text"
+              id="apartmentName"
+              name="apartmentName"
+              required
+            />
+            <label for="apartmentLocation">მისამართი</label>
+            <input
+              type="text"
+              id="apartmentLocation"
+              name="apartmentLocation"
+              required
+            />
+            <label for="apartmentDescription">აღწერილობა</label>
+            <textarea
+              id="apartmentDescription"
+              name="apartmentDescription"
+              required
+            ></textarea>
+            <label for="photoUpload">ატვირთეთ ფოტოსურათი</label>
+            <input
+              type="file"
+              id="photoUpload"
+              name="photoUpload"
+              accept="image/*"
+              multiple
+              required
+            />
+            <button type="submit">ვეთანხმები</button>
+          </form>
+        </div>
+        <div class="minimize-button-upload" id="minimizeButton-upload">-</div>
+      </div>
+    </div>
+    </section>
 </main>
 
 <!-- footer section -->
