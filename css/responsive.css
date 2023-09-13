@@ -43,16 +43,39 @@
 /* main section
 section1 */
 
-@media (min-width: 320px)  and (max-width:720px){
+@media (min-width: 320px)  and (max-width:1024px){
+  .left-div {
+    width: 100%;
+    flex-direction: column;
+    /* margin-left: 10px; */
+  }
+  .tltle {
+    width: 90%;
+    margin-left: 10px;
+  }
+  h1{
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+  .title-paragrap {
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+}
+
+
+
+@media (min-width: 320px)  and (max-width:480px){
   .section-1{
     /* width: 100%; */
     /* background-color: aqua; */
     padding-top: 100px;
   }
-  .left-div {
+  /* .left-div {
     width: 100%;
     flex-direction: column;
-  }
+  } */
   .video{
     width: 100%;
     height: 40%;
@@ -62,15 +85,18 @@ section1 */
     margin-left: 0px;
   }
   h1{
-    
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  margin-right: 0px;
+    font-size: 24px;
   }
   .title-paragrap {
-    font-weight: 400;
   font-size: 16px;
-  margin-right: 0px;
   }
+}
+
+
+@media (min-width: 481px)  and (max-width:720px){
+
+}
+
+@media (min-width: 721px)  and (max-width:1024px){
+  
 }
