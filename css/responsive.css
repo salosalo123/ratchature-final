@@ -44,6 +44,9 @@
 section1 */
 
 @media (min-width: 320px)  and (max-width:1024px){
+  .section-1{
+    padding-top: 20px;
+    }
   .left-div {
     width: 100%;
     flex-direction: column;
@@ -61,6 +64,7 @@ section1 */
   .title-paragrap {
     margin-right: 0px;
     margin-left: 10px;
+    font-weight: 400;
   }
   .video{
     width: 100%;
@@ -72,22 +76,17 @@ section1 */
 
 
 @media (min-width: 320px)  and (max-width:480px){
-  .section-1{
-    padding-top: 100px;
-  }
-  /* .left-div {
-    width: 100%;
-    flex-direction: column;
-  } */
+  
   .video{
     width: 100%;
-    height: 40%;
+    height: 50%;
   }
   h1{
     font-size: 24px;
   }
   .title-paragrap {
   font-size: 16px;
+  line-height: 18px;
   }
   .registration-form {
     
@@ -103,9 +102,6 @@ section1 */
 
 
 @media (min-width: 480px)  and (max-width:768px){
-  .section-1{
-    padding-top: 100px;
-  }
   .tltle {
     width: 90%;
     margin-left: 0px;
@@ -115,6 +111,7 @@ section1 */
   }
   .title-paragrap {
   font-size: 18px;
+  line-height: 22px;
   }
   .registration-form {
     margin-top: 20%;
@@ -126,9 +123,6 @@ section1 */
 }
 
 @media (min-width: 769px)  and (max-width:1024px){
-  .section-1{
-    height: 800px;
-  }
   .tltle {
     width: 100%;
     margin-left: 0px;
@@ -138,6 +132,7 @@ section1 */
   }
   .title-paragrap {
   font-size: 22px;
+  line-height: 24px;
   }
   .video{
     width: 100%;
@@ -150,5 +145,22 @@ section1 */
     left: 30%;
     width: 40%;
     height: 60%;
+  }
+}
+@media (min-width: 1024px)  and (max-width:1440px){
+  h1{
+    font-size: 34px;
+  }
+
+  .title-paragrap {
+    font-size: 20px;
+    line-height: 22px;
+  }
+  .registration-form {
+    margin-top: 20%;
+    right: 0%;
+    left: 30%;
+    width: 30%;
+    height: 50%;
   }
 }
