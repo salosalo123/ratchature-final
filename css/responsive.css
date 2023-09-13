@@ -43,7 +43,7 @@
 /* main section
 section1 */
 
-@media (max-width: 320px) {
+@media (min-width: 320px)  and (max-width:720px){
   .section-1{
     /* width: 100%; */
     /* background-color: aqua; */
