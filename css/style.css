@@ -91,10 +91,7 @@ header {
 }
 
 .video {
-  /* position: relative; */
-  /* margin-top: 10%; */
-  /* margin-left: 900px; */
-  /* padding-bottom: 56.25%; 16:9 aspect ratio */
+  margin-right:-80px;
   width: 60%;
   height: 100%;
   overflow: hidden;
@@ -120,7 +117,7 @@ header {
   margin-left: 20px;
 }
 h1 {
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #db6f0b;
