@@ -77,3 +77,23 @@ document.addEventListener("DOMContentLoaded", function () {
     slideContainer.style.left = "-400px";
   });
 });
+
+/* chaches page */
+document.addEventListener("DOMContentLoaded", function () {
+  const seeMoreBtns = document.querySelectorAll(".see-more-btn");
+  const closeBtns = document.querySelectorAll(".close-btn");
+
+  seeMoreBtns.forEach(function (btn, index) {
+    btn.addEventListener("click", function () {
+      const infoDetails = document.querySelectorAll(".info-details")[index];
+      infoDetails.style.display = "block";
+    });
+  });
+
+  closeBtns.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      const infoDetails = this.parentElement;
+      infoDetails.style.display = "none";
+    });
+  });
+});

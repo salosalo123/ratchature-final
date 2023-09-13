@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap");
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Noto Serif Georgian', serif; */
 .sections {
   max-width: 1900px;
   width: 100%;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
-  
-  
+  font-family: "Roboto", sans-serif;
+
   /* height: 800px; */
 }
 body {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* header */
@@ -33,7 +32,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   padding: 10px 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0 60px;
 }
 
@@ -98,7 +97,7 @@ header {
 }
 
 .video {
-  margin-right:-80px;
+  margin-right: -80px;
   width: 60%;
   height: 100%;
   overflow: hidden;
@@ -138,7 +137,7 @@ h1 {
   margin-right: 50px;
   text-align: center;
   line-height: 26px;
-  font-family: 'Noto Serif Georgian', serif;
+  font-family: "Noto Serif Georgian", serif;
 }
 /* .section-1{
 font-family: Arial, sans-serif;
@@ -483,4 +482,51 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #e74c3c;
+}
+
+/* chaches page */
+.conteiner-little-div {
+  /* padding-top: 60px; */
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* margin: 0; */
+  padding-top: 100px;
+}
+.info-container {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+}
+.info-img {
+  width: 400px;
+  height: 400px;
+}
+.info {
+  text-align: center;
+}
+
+.info img {
+  max-width: 100%;
+  height: auto;
+}
+
+.info-details {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  z-index: 1;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
 }
