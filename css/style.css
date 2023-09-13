@@ -282,7 +282,7 @@ footer {
 }
 
 /* call */
-.contact-container {
+/* .contact-container {
   max-width: 600px;
   margin: 100px auto;
   background-color: #fff;
@@ -336,7 +336,7 @@ form button:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
+} */
 
 /* registration*/
 .registration-form {
