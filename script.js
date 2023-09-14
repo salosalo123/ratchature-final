@@ -88,3 +88,14 @@ document.addEventListener("DOMContentLoaded", function () {
 function goToAnotherPage() {
   window.location.href = "chaches.html";
 }
+
+// conteiner-hover
+
+function expandBox(box) {
+  box.classList.add("expanded");
+}
+
+function shrinkBoxes() {
+  const boxes = document.querySelectorAll(".box");
+  boxes.forEach((box) => box.classList.remove("expanded"));
+}

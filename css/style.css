@@ -223,6 +223,8 @@ background-color: #f4f4f4;
   margin: 0 auto;
   text-align: center;
   cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .photo-container img {
@@ -230,6 +232,20 @@ background-color: #f4f4f4;
   height: auto;
   border-radius: 8px;
 }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #f0f0f0;
+  margin: 10px;
+  transition: transform 1.3s ease;
+  cursor: pointer;
+}
+
+.expanded {
+  transform: scale(1.2);
+}
+
 /* footer */
 
 footer {
@@ -463,15 +479,17 @@ button[type="submit"]:hover {
 }
 .info-container {
   display: flex;
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   justify-content: center;
   align-items: center;
   margin-top: 150px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .info-img {
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   margin: 10px;
 }
