@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /* chaches page */
 document.addEventListener("DOMContentLoaded", function () {
   const seeMoreBtns = document.querySelectorAll(".see-more-btn");
-  const closeBtns = document.querySelectorAll(".close-btn");
+  const closeBtns = document.querySelectorAll(".close-btn-info");
 
   seeMoreBtns.forEach(function (btn, index) {
     btn.addEventListener("click", function () {
