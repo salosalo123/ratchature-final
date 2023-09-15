@@ -89,6 +89,8 @@ function goToAnotherPage() {
   window.location.href = "chaches.html";
 }
 
+
+
 // conteiner-hover
 
 function expandBox(box) {
@@ -99,3 +101,63 @@ function shrinkBoxes() {
   const boxes = document.querySelectorAll(".box");
   boxes.forEach((box) => box.classList.remove("expanded"));
 }
+
+
+
+
+// bussuness conteiner registratio
+document.getElementById('registrationForm').addEventListener('input', function(event) {
+  var element = event.target;
+  var statusElement = document.getElementById(element.id + 'Error');
+  if (element.checkValidity()) {
+      statusElement.innerText = '';
+  } else {
+      statusElement.innerText = 'Invalid ' + element.id;
+  }
+});
+
+document.getElementById('showPassword').addEventListener('change', function() {
+  var passwordInput = document.getElementById('password');
+  if (this.checked) {
+      passwordInput.type = 'text';
+  } else {
+      passwordInput.type = 'password';
+  }
+});
+
+document.getElementById('submitButton').addEventListener('click', function() {
+  var isValid = true;
+  var formElements = document.getElementById('registrationForm').elements;
+  for (var i = 0; i < formElements.length; i++) {
+      if (!formElements[i].checkValidity()) {
+          isValid = false;
+          break;
+      }
+  }
+
+  if (isValid) {
+      document.getElementById('result').innerText = 'Successful Registration';
+      document.getElementById('result').style.color = 'green';
+  } else {
+      document.getElementById('result').innerText = 'Incorrect Information';
+      document.getElementById('result').style.color = 'red';
+  }
+});
+
+// divreg
+document.getElementById('toggleButton').addEventListener('click', function() {
+  var formContainer = document.getElementById('registrationFormContainer');
+  if (formContainer.style.display === 'none' || formContainer.style.display === '') {
+      formContainer.style.display = 'block';
+      this.innerText = 'Close Registration Form';
+  } else {
+      formContainer.style.display = 'none';
+      this.innerText = 'Open Registration Form';
+  }
+});
+
+
+// ********
+document.getElementById('clickMeDiv').addEventListener('click', function() {
+  window.location.href = 'registrationbussn.html';
+});
