@@ -391,6 +391,7 @@ label,
 input,
 button {
   margin-bottom: 10px;
+  margin-left: 0;
   font-size: 16px;
 }
 
@@ -405,7 +406,7 @@ button {
 }
 
 button:hover {
-  background-color: #555;
+  background-color: #f5820f;
 }
 
 /* slide right */
@@ -580,10 +581,16 @@ button[type="submit"]:hover {
 
 .bussnessregistrationform {
   height: 100%;
+  width: 600px;
   background-color: #ffdedb;
   padding-top: 150px;
-  margin-top: -100px;
+  margin-top: 0px;
 }
 .goBack{
   margin: 30px auto;
+}
+.bussnessregistr{
+  background-image: url(../img/udzirotbaturebi.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
