@@ -595,3 +595,31 @@ h3 {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+/* ******* */
+.icon-container-other {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.click-icon-other {
+  font-size: 2em;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.page-other {
+  display: none;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.page-other {
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  margin-bottom: 5px;
+}

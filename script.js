@@ -186,3 +186,31 @@ function goBackButton() {
 function goToAnotherPagehotels() {
   window.location.href = "hotels.html";
 }
+
+// *****//
+document
+  .getElementById("clickIcon-other")
+  .addEventListener("click", function () {
+    const pageList = document.getElementById("pageList-other");
+    if (pageList.style.display === "none") {
+      pageList.style.display = "block";
+    } else {
+      pageList.style.display = "none";
+    }
+  });
+
+document.getElementById("page1-other").addEventListener("click", function () {
+  window.location.href = "page1.html";
+});
+
+document.getElementById("page2-other").addEventListener("click", function () {
+  window.location.href = "page2.html";
+});
+
+document.getElementById("page3-other").addEventListener("click", function () {
+  window.location.href = "page3.html";
+});
+
+document.getElementById("page4-other").addEventListener("click", function () {
+  window.location.href = "page4.html";
+});
