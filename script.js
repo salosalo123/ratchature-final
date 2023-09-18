@@ -182,3 +182,4 @@ function goToRegistrationbussn() {
 function goBackButton() {
   window.location.href = "index.html";
 }
+

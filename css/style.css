@@ -147,15 +147,6 @@ h1 {
   line-height: 26px;
   font-family: "Noto Serif Georgian", serif;
 }
-/* .section-1{
-font-family: Arial, sans-serif;
-margin: 0;
-display: flex;
-justify-content: left;
-align-items: center;
-height: 100vh;
-background-color: #f4f4f4; 
-} */
 
 .slide-container {
   position: relative;
@@ -245,12 +236,7 @@ background-color: #f4f4f4;
   justify-content: center;
   align-items: center;
 }
-/* .right-div-conteiner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-} */
+
 .photo-container {
   width: 300px;
   height: 300px;
@@ -293,12 +279,6 @@ background-color: #f4f4f4;
   transform: translateX(-50%);
   margin-bottom: 20px;
 }
-/* .right-div-conteiner{
-  width: 30%;
-  height: 100%;
-  background-color: #ccc;
-} */
-
 
 /* footer */
 
@@ -599,7 +579,11 @@ button[type="submit"]:hover {
 
 
 .bussnessregistrationform {
-  height: 1500px;
+  height: 100%;
   background-color: #ffdedb;
   padding-top: 150px;
+  margin-top: -100px;
+}
+.goBack{
+  margin: 30px auto;
 }
