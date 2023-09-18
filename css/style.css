@@ -34,7 +34,6 @@ header {
   padding: 10px 20px;
   font-family: "Roboto", sans-serif;
   padding: 0 60px;
-  
 }
 
 .logopict {
@@ -71,7 +70,6 @@ header {
 
 .nav-links {
   display: flex;
-
 }
 
 .nav-links li {
@@ -226,8 +224,13 @@ background-color: #f4f4f4;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 30px;
+<<<<<<< Updated upstream
 }
 .sec2-divsall{
+=======
+} */
+.sec2-divsall {
+>>>>>>> Stashed changes
   gap: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -235,9 +238,9 @@ background-color: #f4f4f4;
   justify-content: center;
   align-items: center;
   width: 100%;
-  height:100%;
+  height: 100%;
 }
-.left-div-conteiner{
+.left-div-conteiner {
   gap: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +248,11 @@ background-color: #f4f4f4;
   justify-content: center;
   align-items: center;
 }
+<<<<<<< Updated upstream
 /* .right-div-conteiner{
+=======
+.right-div-conteiner {
+>>>>>>> Stashed changes
   display: flex;
   justify-content: center;
   align-items: center;
@@ -281,6 +288,7 @@ background-color: #f4f4f4;
   transform: scale(1.2);
 }
 
+<<<<<<< Updated upstream
 
 .turebi-title{
   background-color: ;
@@ -294,11 +302,13 @@ background-color: #f4f4f4;
   margin-bottom: 20px;
 }
 /* .right-div-conteiner{
+=======
+.right-div-conteiner {
+>>>>>>> Stashed changes
   width: 30%;
   height: 100%;
   background-color: #ccc;
 } */
-
 
 /* footer */
 
@@ -592,4 +602,11 @@ button[type="submit"]:hover {
 
 .see-more-btn {
   background-color: #45a049;
+}
+
+/* bussnesregistrationpage */
+.bussnessregistrationform {
+  height: 1500px;
+  background-color: #ffdedb;
+  padding-top: 150px;
 }
