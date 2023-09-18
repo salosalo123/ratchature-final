@@ -275,7 +275,10 @@ h1 {
   transform: translateX(-50%);
   margin-bottom: 20px;
 }
-
+.addbussnes {
+  width: 50px;
+  border-radius: 50px;
+}
 /* footer */
 
 footer {

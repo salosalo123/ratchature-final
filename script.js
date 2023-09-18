@@ -183,3 +183,6 @@ function goBackButton() {
   window.location.href = "index.html";
 }
 
+function goToAnotherPagehotels() {
+  window.location.href = "hotels.html";
+}
