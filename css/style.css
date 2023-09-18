@@ -98,7 +98,9 @@ header {
 .section-1 {
   width: 100%;
   height: 900px;
-  background-color: #dfe3e1;
+  background-image: url(../img/Saoribackhraund.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .video {
@@ -122,6 +124,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  
 }
 .tltle {
   width: 40%;
@@ -136,7 +139,7 @@ h1 {
   margin-right: 20px;
 }
 .title-paragrap {
-  color: black;
+  color: rgb(248, 241, 241);
   font-weight: 400;
   font-size: 24px;
   margin-right: 50px;
@@ -210,7 +213,7 @@ background-color: #f4f4f4;
 
 /* section 2 */
 
-/* .section-2 {
+.section-2 {
   gap: 30px;
   display: flex;
   flex-wrap: wrap;
@@ -219,9 +222,11 @@ background-color: #f4f4f4;
   align-items: center;
   width: 100%;
   height: 900px;
-  background-color: #a367cd;
+  background-image: url(../img/shovibackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 30px;
-} */
+}
 .sec2-divsall{
   gap: 30px;
   display: flex;
@@ -240,15 +245,15 @@ background-color: #f4f4f4;
   justify-content: center;
   align-items: center;
 }
-.right-div-conteiner{
+/* .right-div-conteiner{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-}
+} */
 .photo-container {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   margin: 0 auto;
   text-align: center;
   cursor: pointer;
@@ -257,29 +262,42 @@ background-color: #f4f4f4;
 }
 
 .photo-container img {
-  max-width: 350px;
-  height: auto;
+  width: 250px;
+  height: 180px;
   border-radius: 8px;
 }
 
 .box {
-  width: 100px;
-  height: 100px;
-  background-color: #f0f0f0;
+  width: 250px;
+  height:250px;
+  background-color: #edac6e;
   margin: 10px;
   transition: transform 1.3s ease;
   cursor: pointer;
+  position: relative;
 }
 
 .expanded {
   transform: scale(1.2);
 }
 
-.right-div-conteiner{
+
+.turebi-title{
+  background-color: ;
+  color: #1c1b1b;
+  font-weight: 600;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 20px;
+}
+/* .right-div-conteiner{
   width: 30%;
   height: 100%;
   background-color: #ccc;
-}
+} */
 
 
 /* footer */
@@ -514,31 +532,38 @@ button[type="submit"]:hover {
   padding-left: 60px;
   padding-right: 60px;
   /* margin: 0; */
-  padding-top: 100px;
+  padding-top: 50px;
+  background-image: url(../img/vxrajvaribackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 50px;
 }
 .info-container {
   display: flex;
-  width: 350px;
-  height: 350px;
+  width: 300px;
+  height: 300px;
   justify-content: center;
   align-items: center;
   margin-top: 150px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 20px 8px 12px rgba(235, 111, 16, 0.1);
 }
+
 .info-img {
   width: 300px;
   height: 300px;
   object-fit: cover;
   margin: 10px;
+  box-shadow: 20px 8px 12px rgba(182, 83, 7, 0.1);
 }
 .info {
   text-align: center;
 }
 
 .info img {
-  max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 250px;
+  border-radius: 8px;
 }
 
 .info-details {
