@@ -188,29 +188,17 @@ function goToAnotherPagehotels() {
 }
 
 // *****//
-document
-  .getElementById("clickIcon-other")
-  .addEventListener("click", function () {
-    const pageList = document.getElementById("pageList-other");
-    if (pageList.style.display === "none") {
-      pageList.style.display = "block";
-    } else {
-      pageList.style.display = "none";
-    }
-  });
 
-document.getElementById("page1-other").addEventListener("click", function () {
-  window.location.href = "page1.html";
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   const submenuItems = document.querySelectorAll('.has-submenu');
 
-document.getElementById("page2-other").addEventListener("click", function () {
-  window.location.href = "page2.html";
-});
+//   submenuItems.forEach(item => {
+//     item.addEventListener('mouseenter', function() {
+//       this.classList.add('active');
+//     });
 
-document.getElementById("page3-other").addEventListener("click", function () {
-  window.location.href = "page3.html";
-});
-
-document.getElementById("page4-other").addEventListener("click", function () {
-  window.location.href = "page4.html";
-});
+//     item.addEventListener('mouseleave', function() {
+//       this.classList.remove('active');
+//     });
+//   });
+// });

@@ -37,7 +37,31 @@
   .facebook {
     display: none;
   }
-}
+
+  /* others */
+    .nav-list ul {
+      text-align: center;
+    }
+  
+    .nav-list ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  
+    .nav-list .has-submenu ul {
+      position: absolute;
+      background: #f0862a;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+  
+    .nav-list .has-submenu:hover ul {
+      display: block;
+    }
+  }
+
+
+
 
 /* main section
 section1 */

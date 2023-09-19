@@ -79,7 +79,8 @@ header {
 .active-li {
   color: #45a049;
 }
-.nav-links a {
+.nav-links a,
+.nav-links span{
   text-decoration: none;
   color: #fff;
   font-weight: bold;
@@ -427,9 +428,10 @@ button:hover {
 }
 
 h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
+
 
 button {
   padding: 10px 20px;
@@ -596,30 +598,18 @@ h3 {
   background-repeat: no-repeat;
 }
 
-/* ******* */
-.icon-container-other {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-.click-icon-other {
-  font-size: 2em;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.page-other {
+/* others ******* */
+.nav-list .has-submenu ul {
   display: none;
-  max-height: 200px;
-  overflow-y: auto;
 }
 
-.page-other {
-  padding: 10px;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  background-color: #f0f0f0;
-  margin-bottom: 5px;
+.nav-list .has-submenu:hover ul {
+  display: block;
 }
+
+.nav-list .has-submenu span {
+  cursor: pointer;
+}
+
+
+
