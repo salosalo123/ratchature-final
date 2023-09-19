@@ -515,7 +515,7 @@ button[type="submit"]:hover {
   padding-right: 60px;
   /* margin: 0; */
   padding-top: 50px;
-  background-image: url(../img/vxrajvaribackground.jpg);
+  background-image: url(../img/chachesbackgraubd2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 50px;
@@ -614,8 +614,32 @@ h3 {
 /* ***turebi pege */
 .turebi-page{
   background-image: url(../img/turebibackgraundpage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .art-page{
   background-image: url(../img/xelovnebapagebackgraund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hotel-page{
+  background: url(../img/kotejebiturebi.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.vine-page{
+  background: url(../img/vine-page-backgraund.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.restoran-page{
+  background-image: url(../img/pirosmanisnaxati.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.taxi-page{
+  ackground-image: url(../img//iyidebamiwisnakv.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

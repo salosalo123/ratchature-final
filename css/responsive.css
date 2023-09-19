@@ -106,6 +106,7 @@ section1 */
   }
 }
 
+
 @media (min-width: 320px) and (max-width: 480px) {
   .video {
     width: 100%;
@@ -126,21 +127,42 @@ section1 */
     height: 60%;
   }
   /* chuches */
+.box{
+  width: 250px;
+  
+}
+.box img{
+  width: 250px;
+  
+}
   .conteiner-little-div {
-    padding-top: 300px;
+    padding-top: 50px;
   }
   .info-container {
+    width: 250px;
+    height: 300px;
     margin-bottom: 0;
+  }
+  .info-container img{
+    height: 220px;
+  }
+  h3{
+    font-size: 14px;
   }
   .bussnessregistrationform {
     width: 90%;
+
   }
   .bussnessregistr {
     background-image: none;
     background-color: #f9c89b;
   }
-  .section-2 {
+  .section-2,
+  .mobile-resp-all {
     height: 100%;
+    padding: auto;
+    margin: auto;
+    margin-bottom: 0;
     background-image: none;
     background-color: #f9c89b;
   }
@@ -148,8 +170,18 @@ section1 */
     margin-right: 10px;
     width: 200px;
   }
-}
+ 
 
+}
+@media (min-width: 320px) and (max-width: 350px) {
+  .info-container  img{
+    width: 200px;
+    height: 180px;
+  }
+  .info-container {
+    width: 250px;
+  }
+}
 @media (min-width: 480px) and (max-width: 768px) {
   .tltle {
     width: 90%;
@@ -171,6 +203,16 @@ section1 */
   }
   .tel-color {
     font-size: 18px;
+  }
+  .turebi-page{
+    background-color: #f9c89b;
+  }
+  
+  .art-page{
+    background-color: #f9c89b;
+  }
+  .hotel-page{
+    background-color: #f9c89b;
   }
 }
 
