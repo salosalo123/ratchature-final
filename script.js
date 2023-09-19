@@ -187,18 +187,23 @@ function goToAnotherPagehotels() {
   window.location.href = "hotels.html";
 }
 
+function goToAnotherPageTurebi() {
+  window.location.href = "turebi.html";
+}
+function goToAnotherPageArt() {
+  window.location.href = "art.html";
+}
+
+function goToAnotherPageVine() {
+  window.location.href = "vine.html";
+}
+
+function goToAnotherPageRestorant() {
+  window.location.href = "restorant.html";
+}
+function goToAnotherPageTaxi() {
+  window.location.href = "taxi.html";
+}
 // *****//
 
-// document.addEventListener('DOMContentLoaded', function() {
-//   const submenuItems = document.querySelectorAll('.has-submenu');
 
-//   submenuItems.forEach(item => {
-//     item.addEventListener('mouseenter', function() {
-//       this.classList.add('active');
-//     });
-
-//     item.addEventListener('mouseleave', function() {
-//       this.classList.remove('active');
-//     });
-//   });
-// });

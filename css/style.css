@@ -611,5 +611,11 @@ h3 {
   cursor: pointer;
 }
 
+/* ***turebi pege */
+.turebi-page{
+  background-image: url(../img/turebibackgraundpage.jpg);
+}
 
-
+.art-page{
+  background-image: url(../img/xelovnebapagebackgraund.jpg);
+}
