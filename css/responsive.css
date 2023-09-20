@@ -95,11 +95,11 @@ section1 */
     margin-top: 15px;
   }
   .bussnessregistr {
-    background-image: url(../img/siyvary=ulischanchqeri.jpg);
+    background-image: linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)),url(../img/siyvary=ulischanchqeri.jpg);
   }
   .section-2 {
     height: 100%;
-    background-image: url(../img/naqeralabackgraund.jpg);
+    background-image:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img/naqeralabackgraund.jpg);
   }
   .all-rights {
     width: 250px;
@@ -204,16 +204,19 @@ section1 */
   .tel-color {
     font-size: 18px;
   }
-  .turebi-page{
+  .turebi-page,
+  .chaches-page,
+  .art-page,
+  .hotel-page,
+  .restoran-page,
+  .slide-page,
+  .taxi-page,
+  .turebi-page,
+  .vine-page{
     background-color: #f9c89b;
   }
   
-  .art-page{
-    background-color: #f9c89b;
-  }
-  .hotel-page{
-    background-color: #f9c89b;
-  }
+  
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
