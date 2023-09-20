@@ -560,7 +560,7 @@ button[type="submit"]:hover {
   padding-right: 60px;
   /* margin: 0; */
   padding-top: 50px;
-  background-image: url(../img/chachesbackgraubd2.jpg);
+  background-image:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img/chachesbackgraubd2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 50px;
@@ -638,7 +638,7 @@ h3 {
   margin: 30px auto;
 }
 .bussnessregistr {
-  background-image: url(../img/udzirotbaturebi.jpg);
+  background-image:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img/udzirotbaturebi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -658,33 +658,33 @@ h3 {
 
 /* ***turebi pege */
 .turebi-page{
-  background-image: url(../img/turebibackgraundpage.jpg);
+  background-image:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img/turebibackgraundpage.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .art-page{
-  background-image: url(../img/xelovnebapagebackgraund.jpg);
+  background-image:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img/xelovnebapagebackgraund.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .hotel-page{
-  background: url(../img/kotejebiturebi.jpg);
+  background: linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)),url(../img/kotejebiturebi.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .vine-page{
-  background: url(../img/vine-page-backgraund.jpg);
+  background:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img/vine-page-backgraund.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .restoran-page{
-  background-image: url(../img/pirosmanisnaxati.jpg);
+  background-image:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img/pirosmanisnaxati.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 .taxi-page{
-  ackground-image: url(../img//iyidebamiwisnakv.jpg);
+  ackground-image:linear-gradient(to right, rgb(20, 19, 19),  rgba(33, 23, 23, 0.61) , rgba(48, 11, 11, 0.199)), url(../img//iyidebamiwisnakv.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
