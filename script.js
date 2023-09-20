@@ -133,10 +133,10 @@ document.getElementById("submitButton").addEventListener("click", function () {
   }
 
   if (isValid) {
-    document.getElementById("result").innerText = "Successful Registration";
+    document.getElementById("result").innerText = "წარმატებით დარეგისტრირდა";
     document.getElementById("result").style.color = "green";
   } else {
-    document.getElementById("result").innerText = "Incorrect Information";
+    document.getElementById("result").innerText = "შეცდომაა რეგისტრაციაში";
     document.getElementById("result").style.color = "red";
   }
 });
@@ -149,10 +149,10 @@ document.getElementById("toggleButton").addEventListener("click", function () {
     formContainer.style.display === ""
   ) {
     formContainer.style.display = "block";
-    this.innerText = "Close Registration Form";
+    this.innerText = "დახურე რეგისტრაციის ფორმა";
   } else {
     formContainer.style.display = "none";
-    this.innerText = "Open Registration Form";
+    this.innerText = "გახსენი რეგისტრაციის ფორმა";
   }
 });
 
@@ -175,7 +175,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
 
 // *****connect pages
 
@@ -225,97 +224,112 @@ function goToAnotherPageSlide() {
 //         }
 
 //         setInterval(nextSlide, 2000);
-  
 
 // json
 async function getData() {
   try {
-      const response = await axios.get('https://jsonplaceholder.typicode.com/users');
-      const data = response.data;
-      document.getElementById('getDataResult').innerHTML = JSON.stringify(data, null, 2);
+    const response = await axios.get(
+      "https://jsonplaceholder.typicode.com/users"
+    );
+    const data = response.data;
+    document.getElementById("getDataResult").innerHTML = JSON.stringify(
+      data,
+      null,
+      2
+    );
   } catch (error) {
-      console.error('Error fetching data:', error);
+    console.error("Error fetching data:", error);
   }
 }
 
 async function postData() {
-  const inputData = document.getElementById('postInput').value;
+  const inputData = document.getElementById("postInput").value;
 
   try {
-      const response = await axios.post('https://jsonplaceholder.typicode.com/posts', {
-          title: inputData,
-          body: 'Sample Body',
-          userId: 1
-      });
-      const data = response.data;
-      document.getElementById('postDataResult').innerHTML = JSON.stringify(data, null, 2);
+    const response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      {
+        title: inputData,
+        body: "Sample Body",
+        userId: 1,
+      }
+    );
+    const data = response.data;
+    document.getElementById("postDataResult").innerHTML = JSON.stringify(
+      data,
+      null,
+      2
+    );
   } catch (error) {
-      console.error('Error posting data:', error);
+    console.error("Error posting data:", error);
   }
 }
 
 async function deleteData() {
-  const id = document.getElementById('deleteInput').value;
+  const id = document.getElementById("deleteInput").value;
 
   try {
-      const response = await axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
-      const data = response.data;
-      document.getElementById('deleteDataResult').innerHTML = JSON.stringify(data, null, 2);
+    const response = await axios.delete(
+      `https://jsonplaceholder.typicode.com/posts/${id}`
+    );
+    const data = response.data;
+    document.getElementById("deleteDataResult").innerHTML = JSON.stringify(
+      data,
+      null,
+      2
+    );
   } catch (error) {
-      console.error('Error deleting data:', error);
+    console.error("Error deleting data:", error);
   }
 }
 
-
-
 // ***search****
 function search() {
-  const searchInput = document.getElementById('searchInput');
-  const searchResult = document.getElementById('searchResult');
-  
+  const searchInput = document.getElementById("searchInput");
+  const searchResult = document.getElementById("searchResult");
+
   const searchTerm = searchInput.value.trim();
 
-  if (searchTerm !== '') {
-      searchResult.innerHTML = `Result for: <strong>${searchTerm}</strong>`;
+  if (searchTerm !== "") {
+    searchResult.innerHTML = `Result for: <strong>${searchTerm}</strong>`;
   } else {
-      searchResult.innerHTML = 'Please enter a search term.';
+    searchResult.innerHTML = "Please enter a search term.";
   }
 }
 
 //  *******accordion**
 
+document.addEventListener("DOMContentLoaded", function () {
+  const accordionItems = document.querySelectorAll(".accordion-item");
 
-document.addEventListener('DOMContentLoaded', function() {
-  const accordionItems = document.querySelectorAll('.accordion-item');
+  accordionItems.forEach((item) => {
+    const header1 = item.querySelector(".accordion-header");
+    const content1 = item.querySelector(".accordion-content");
 
-  accordionItems.forEach(item => {
-      const header1 = item.querySelector('.accordion-header');
-      const content1 = item.querySelector('.accordion-content');
-
-      header1.addEventListener('click', function() {
-          content1.style.display = content1.style.display === 'none' ? 'block' : 'none';
-      });
+    header1.addEventListener("click", function () {
+      content1.style.display =
+        content1.style.display === "none" ? "block" : "none";
+    });
   });
 });
 
 // *****filter
-document.addEventListener('DOMContentLoaded', function() {
-  const filterInput = document.getElementById('filterInput');
-  const itemList = document.getElementById('itemList');
-  const items = itemList.getElementsByTagName('li');
+document.addEventListener("DOMContentLoaded", function () {
+  const filterInput = document.getElementById("filterInput");
+  const itemList = document.getElementById("itemList");
+  const items = itemList.getElementsByTagName("li");
 
-  filterInput.addEventListener('input', function() {
-      const searchTerm = this.value.toLowerCase();
+  filterInput.addEventListener("input", function () {
+    const searchTerm = this.value.toLowerCase();
 
-      for (let i = 0; i < items.length; i++) {
-          const itemText = items[i].textContent.toLowerCase();
+    for (let i = 0; i < items.length; i++) {
+      const itemText = items[i].textContent.toLowerCase();
 
-          if (itemText.includes(searchTerm)) {
-              items[i].style.display = 'block';
-          } else {
-              items[i].style.display = 'none';
-          }
+      if (itemText.includes(searchTerm)) {
+        items[i].style.display = "block";
+      } else {
+        items[i].style.display = "none";
       }
+    }
   });
 });
-

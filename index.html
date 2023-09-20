@@ -23,7 +23,7 @@
           </div>
           <div class="close-icon" id="close-icon">&times;</div>
         </div>
-        <ul class="nav-links " id="nav-links">
+        <ul class="nav-links" id="nav-links">
           <li class="active-li"><a href="./index.html">მთავარი</a></li>
           <li><a href="./chaches.html">კულტურული ძეგლები</a></li>
           <li><a href="./hotels.html">სასტუმროები</a></li>
@@ -33,7 +33,7 @@
               <li><a href="turebi.html">ტურები</a></li>
               <li><a href="art.html">ხელოვნება</a></li>
               <li><a href="restorant.html">რესტორნები</a></li>
-             <li><a href="vine.html">ღვინის მარნები</a></li>
+              <li><a href="vine.html">ღვინის მარნები</a></li>
               <li><a href="taxi.html">ყიდვა გაყიდვა</a></li>
             </ul>
           </li>
@@ -43,15 +43,15 @@
 
       <div class="registration-form" id="registrationForm">
         <div class="close-btn" onclick="closeForm()">X</div>
-        <h2>Register</h2>
+        <!-- <h2>რეგისტრაცია</h2> -->
         <form action="#">
-          <label for="username">Username</label>
+          <label for="username">მომხმარებლის სახელი</label>
           <input type="text" id="username" name="username" required />
-          <label for="email">Email</label>
+          <label for="email">იმეილი</label>
           <input type="email" id="email" name="email" required />
-          <label for="password">Password</label>
+          <label for="password">პაროლი</label>
           <input type="password" id="password" name="password" required />
-          <button type="submit">Register</button>
+          <button type="submit">რეგისტრაცია</button>
         </form>
       </div>
     </header>
@@ -138,7 +138,7 @@
             </div>
 
             <div
-              class="photo-container box  "
+              class="photo-container box"
               onmouseover="expandBox(this)"
               onmouseout="shrinkBoxes()"
               onclick="goToAnotherPageArt()"
@@ -181,28 +181,31 @@
               <p></p>
             </div>
             <div
-            class="photo-container box"
-            onmouseover="expandBox(this)"
-            onmouseout="shrinkBoxes()"
-            onclick="goToAnotherPageSlide() "
-          >
-            <img src="./img/chachesbackgraubd2.jpg" alt="Photo" />
-            <p class="turebi-title">js library</p>
-            <p></p>
-          </div>
-          <div
-          class="photo-container box">
-          <h3>ფილტრი</h3>
-    <input type="text" id="filterInput" placeholder="Search for items...">
-    <ul id="itemList">
-      <li>Item 1</li>
-      <li>Item 2</li>
-      <li>Item 3</li>
-      <li>Item 4</li>
-      <li>Item 5</li>
-    </ul>
-        </div>
-             <div
+              class="photo-container box"
+              onmouseover="expandBox(this)"
+              onmouseout="shrinkBoxes()"
+              onclick="goToAnotherPageSlide() "
+            >
+              <img src="./img/chachesbackgraubd2.jpg" alt="Photo" />
+              <p class="turebi-title">js library</p>
+              <p></p>
+            </div>
+            <div class="photo-container box">
+              <h3>ფილტრი</h3>
+              <input
+                type="text"
+                id="filterInput"
+                placeholder="Search for items..."
+              />
+              <ul id="itemList">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+                <li>Item 5</li>
+              </ul>
+            </div>
+            <div
               class="registrtion-con photo-container box"
               onmouseover="expandBox(this)"
               onmouseout="shrinkBoxes()"
@@ -213,34 +216,37 @@
                 <p class="turebi-title">შენი პროდუქტი</p>
               </div>
             </div>
-            <div class="accordion photo-container box"
-             
-            >
+            <div class="accordion photo-container box">
               <div class="accordion-item">
-                  <div class="accordion-header">ონი</div>
-                  <div class="accordion-content">AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA</div>
+                <div class="accordion-header">ონი</div>
+                <div class="accordion-content">
+                  AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA
+                </div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">ამბროლაური</div>
-                  <div class="accordion-content">Content for Section 2</div>
+                <div class="accordion-header">ამბროლაური</div>
+                <div class="accordion-content">Content for Section 2</div>
               </div>
               <div class="accordion-item">
-                  <div class="accordion-header">რაჭა</div>
-                  <div class="accordion-content">Content for Section 3</div>
+                <div class="accordion-header">რაჭა</div>
+                <div class="accordion-content">Content for Section 3</div>
               </div>
+            </div>
+
+            <div class="containerfind">
+              <!-- <h3>Search Example</h3> -->
+              <div class="search-container">
+                <input
+                  type="text"
+                  id="searchInput"
+                  placeholder="Enter a search term"
+                />
+                <button onclick="search()">Search</button>
+              </div>
+              <div id="searchResult"></div>
+            </div>
           </div>
-          
-        
-        <div class="containerfind">
-          <!-- <h3>Search Example</h3> -->
-          <div class="search-container">
-              <input type="text" id="searchInput" placeholder="Enter a search term">
-              <button onclick="search()">Search</button>
-          </div>
-          <div id="searchResult"></div>
-      </div>
-    </div>
-  </div>
+        </div>
       </section>
       <!-- <section class="slidersec  sections">
         <div class="slider-container-img sections">
@@ -259,7 +265,7 @@
         <div class="slide-container">
           <div class="slide">
             <div class="contact">
-              <h2 class="tel-color ">დაგვიკავშირდით</h2>
+              <h2 class="tel-color">დაგვიკავშირდით</h2>
               <br />
               <p>
                 <a class="tel-color" href="tel:+995555542045"> +995555542045</a>

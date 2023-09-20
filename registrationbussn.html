@@ -33,7 +33,7 @@
               <li><a href="turebi.html">ტურები</a></li>
               <li><a href="art.html">ხელოვნება</a></li>
               <li><a href="restorant.html">რესტორნები</a></li>
-             <li><a href="vine.html">ღვინის მარნები</a></li>
+              <li><a href="vine.html">ღვინის მარნები</a></li>
               <li><a href="taxi.html">ყიდვა გაყიდვა</a></li>
             </ul>
           </li>
@@ -63,69 +63,69 @@
           <!-- <button id="toggleButton">Open Registration Form</button> -->
           <!-- <div id="registrationFormContainer" style="display:none;"> -->
           <div class="container">
-            <h2>Business Registration</h2>
+            <h2>ბიზნესის რეგისტრაცია</h2>
             <form id="registrationForm1">
               <div class="form-group">
-                <label for="name">Name:</label>
+                <label for="name">სახელი:</label>
                 <input type="text" id="name" required />
                 <span class="error" id="nameError"></span>
               </div>
 
               <div class="form-group">
-                <label for="surname">Surname:</label>
+                <label for="surname">გვარი:</label>
                 <input type="text" id="surname" required />
                 <span class="error" id="surnameError"></span>
               </div>
 
               <div class="form-group">
-                <label for="email">Email:</label>
+                <label for="email">იმეილი:</label>
                 <input type="email" id="email" required />
                 <span class="error" id="emailError"></span>
               </div>
 
               <div class="form-group">
-                <label for="password">Password:</label>
+                <label for="password">პაროლი:</label>
                 <input type="password" id="password" required />
                 <span class="error" id="passwordError"></span>
-                <input type="checkbox" id="showPassword" /> Show Password
+                <input type="checkbox" id="showPassword" /> პაროლის ჩვენება
               </div>
 
               <div class="form-group">
-                <label for="confirmPassword">Confirm Password:</label>
+                <label for="confirmPassword">დაადასტურე პაროლი:</label>
                 <input type="password" id="confirmPassword" required />
                 <span class="error" id="confirmPasswordError"></span>
               </div>
 
               <div class="form-group">
-                <label for="businessName">Business Name:</label>
+                <label for="businessName">ბიზნესის სახელი:</label>
                 <input type="text" id="businessName" required />
                 <span class="error" id="businessNameError"></span>
               </div>
 
               <div class="form-group">
-                <label for="description">Business Description:</label>
+                <label for="description">ბიზნესის აღწერა:</label>
                 <textarea id="description" required></textarea>
                 <span class="error" id="descriptionError"></span>
               </div>
 
               <div class="form-group">
-                <label for="images">Upload Images:</label>
+                <label for="images">ატვირთე სურათი:</label>
                 <input type="file" id="images" accept="image/*" multiple />
               </div>
 
               <!-- Address Fields -->
               <div class="form-group">
-                <label for="street">Street Address:</label>
+                <label for="street">ქუჩა:</label>
                 <input type="text" id="street" required />
                 <span class="error" id="streetError"></span>
               </div>
               <div class="form-group">
-                <label for="town">Town/City:</label>
+                <label for="town">ქალაქი:</label>
                 <input type="text" id="town" required />
                 <span class="error" id="townError"></span>
               </div>
               <div class="form-group">
-                <label for="region">Region/State:</label>
+                <label for="region">რეგიონი:</label>
                 <input type="text" id="region" required />
                 <span class="error" id="regionError"></span>
               </div>
@@ -136,36 +136,36 @@
               </div>
 
               <div class="form-group">
-                <label for="phone">Phone Number:</label>
+                <label for="phone">ტელეფონის ნომერიr:</label>
                 <input type="tel" id="phone" required />
                 <span class="error" id="phoneError"></span>
               </div>
 
               <div class="form-group">
-                <label for="country">Country:</label>
+                <label for="country">ქვეყანა:</label>
                 <select id="country" required>
-                  <option value="us">United States</option>
-                  <!-- Add more options as needed -->
+                  <option value="geo">საქართველო</option>
+                  <option value="us">ამერიკის შეერტებული შტატები</option>
+                  <option value="ru">რუსეთი</option>
                 </select>
               </div>
 
-              <!-- Payment Fields -->
+              <!-- გადახდა -->
               <div class="form-group">
-                <label for="cardNumber">Card Number:</label>
+                <label for="cardNumber">ბარათის ნომერი:</label>
                 <input type="text" id="cardNumber" required />
                 <span class="error" id="cardNumberError"></span>
               </div>
               <div class="form-group">
-                <label for="cardType">Card Type:</label>
+                <label for="cardType">ბარათის სახეობა:</label>
                 <select id="cardType" required>
                   <option value="visa">Visa</option>
                   <option value="mastercard">MasterCard</option>
-                  <!-- Add more options as needed -->
                 </select>
                 <span class="error" id="cardTypeError"></span>
               </div>
               <div class="form-group">
-                <label for="cardExpiration">Card Expiration Date:</label>
+                <label for="cardExpiration">მოქმედების ვადა:</label>
                 <input type="text" id="cardExpiration" required />
                 <span class="error" id="cardExpirationError"></span>
               </div>
@@ -175,13 +175,13 @@
                 <span class="error" id="cvvError"></span>
               </div>
 
-              <button type="button" id="submitButton">Register</button>
+              <button type="button" id="submitButton">რეგისტრაცია</button>
               <div id="result"></div>
             </form>
           </div>
 
           <button onclick="goBackButton()" id="goBack" class="goBack">
-            Go Back
+            უკან დაბრუნება
           </button>
         </div>
       </section>
