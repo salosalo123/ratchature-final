@@ -688,3 +688,23 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* *******accordion**** */
+
+.accordion-item {
+  padding-top: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #ccc;
+}
+
+.accordion-header {
+  padding: 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #ffffff;
+}

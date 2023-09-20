@@ -176,6 +176,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+
+// *****connect pages
+
 function goToRegistrationbussn() {
   window.location.href = "registrationbussn.html";
 }
@@ -208,20 +211,20 @@ function goToAnotherPageSlide() {
   window.location.href = "slide.html";
 }
 // ***slider**//
-const sliderImg = document.querySelector('.slider2');
-        const slidesImg = document.querySelectorAll('.slide2');
-        let currentIndex = 0;
+// const sliderImg = document.querySelector('.slider2');
+//         const slidesImg = document.querySelectorAll('.slide2');
+//         let currentIndex = 0;
 
-        function showSlide(index) {
-            sliderImg.style.transform = `translateX(-${index * 100}%)`;
-        }
+//         function showSlide(index) {
+//             sliderImg.style.transform = `translateX(-${index * 100}%)`;
+//         }
 
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % slidesImg.length;
-            showSlide(currentIndex);
-        }
+//         function nextSlide() {
+//             currentIndex = (currentIndex + 1) % slidesImg.length;
+//             showSlide(currentIndex);
+//         }
 
-        setInterval(nextSlide, 2000);
+//         setInterval(nextSlide, 2000);
   
 
 // json
@@ -278,3 +281,41 @@ function search() {
       searchResult.innerHTML = 'Please enter a search term.';
   }
 }
+
+//  *******accordion**
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(item => {
+      const header1 = item.querySelector('.accordion-header');
+      const content1 = item.querySelector('.accordion-content');
+
+      header1.addEventListener('click', function() {
+          content1.style.display = content1.style.display === 'none' ? 'block' : 'none';
+      });
+  });
+});
+
+// *****filter
+document.addEventListener('DOMContentLoaded', function() {
+  const filterInput = document.getElementById('filterInput');
+  const itemList = document.getElementById('itemList');
+  const items = itemList.getElementsByTagName('li');
+
+  filterInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+
+      for (let i = 0; i < items.length; i++) {
+          const itemText = items[i].textContent.toLowerCase();
+
+          if (itemText.includes(searchTerm)) {
+              items[i].style.display = 'block';
+          } else {
+              items[i].style.display = 'none';
+          }
+      }
+  });
+});
+
