@@ -204,6 +204,77 @@ function goToAnotherPageRestorant() {
 function goToAnotherPageTaxi() {
   window.location.href = "taxi.html";
 }
-// *****//
+function goToAnotherPageSlide() {
+  window.location.href = "slide.html";
+}
+// ***slider**//
+const sliderImg = document.querySelector('.slider2');
+        const slidesImg = document.querySelectorAll('.slide2');
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            sliderImg.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slidesImg.length;
+            showSlide(currentIndex);
+        }
+
+        setInterval(nextSlide, 2000);
+  
+
+// json
+async function getData() {
+  try {
+      const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+      const data = response.data;
+      document.getElementById('getDataResult').innerHTML = JSON.stringify(data, null, 2);
+  } catch (error) {
+      console.error('Error fetching data:', error);
+  }
+}
+
+async function postData() {
+  const inputData = document.getElementById('postInput').value;
+
+  try {
+      const response = await axios.post('https://jsonplaceholder.typicode.com/posts', {
+          title: inputData,
+          body: 'Sample Body',
+          userId: 1
+      });
+      const data = response.data;
+      document.getElementById('postDataResult').innerHTML = JSON.stringify(data, null, 2);
+  } catch (error) {
+      console.error('Error posting data:', error);
+  }
+}
+
+async function deleteData() {
+  const id = document.getElementById('deleteInput').value;
+
+  try {
+      const response = await axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`);
+      const data = response.data;
+      document.getElementById('deleteDataResult').innerHTML = JSON.stringify(data, null, 2);
+  } catch (error) {
+      console.error('Error deleting data:', error);
+  }
+}
 
 
+
+// ***search****
+function search() {
+  const searchInput = document.getElementById('searchInput');
+  const searchResult = document.getElementById('searchResult');
+  
+  const searchTerm = searchInput.value.trim();
+
+  if (searchTerm !== '') {
+      searchResult.innerHTML = `Result for: <strong>${searchTerm}</strong>`;
+  } else {
+      searchResult.innerHTML = 'Please enter a search term.';
+  }
+}

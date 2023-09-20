@@ -99,7 +99,7 @@
         <div class="sec2-divsall">
           <div class="left-div-conteiner">
             <div
-              class="photo-container box"
+              class="photo-container box slider"
               onmouseover="expandBox(this)"
               onmouseout="shrinkBoxes()"
             >
@@ -138,7 +138,7 @@
             </div>
 
             <div
-              class="photo-container box"
+              class="photo-container box  "
               onmouseover="expandBox(this)"
               onmouseout="shrinkBoxes()"
               onclick="goToAnotherPageArt()"
@@ -165,7 +165,7 @@
               onmouseout="shrinkBoxes()"
               onclick="goToAnotherPageRestorant()"
             >
-              <img src="./img/restornebitureb.jpg" alt="Photo" />
+              <img src="./img/chrebalosmaranirestoran.jpeg" alt="Photo" />
               <p class="turebi-title">რესტორნები</p>
               <p></p>
             </div>
@@ -180,8 +180,17 @@
               <p class="turebi-title">ყიდვა-გაყიდვა</p>
               <p></p>
             </div>
-
             <div
+            class="photo-container box"
+            onmouseover="expandBox(this)"
+            onmouseout="shrinkBoxes()"
+            onclick="goToAnotherPageSlide() "
+          >
+            <img src="./img/chachesbackgraubd2.jpg" alt="Photo" />
+            <p class="turebi-title">js library</p>
+            <p></p>
+          </div>
+             <div
               class="registrtion-con photo-container box"
               onmouseover="expandBox(this)"
               onmouseout="shrinkBoxes()"
@@ -192,9 +201,28 @@
                 <p class="turebi-title">შენი პროდუქტი</p>
               </div>
             </div>
+          
+        
+        <div class="containerfind">
+          <!-- <h3>Search Example</h3> -->
+          <div class="search-container">
+              <input type="text" id="searchInput" placeholder="Enter a search term">
+              <button onclick="search()">Search</button>
           </div>
-        </div>
+          <div id="searchResult"></div>
+      </div>
+    </div>
+  </div>
       </section>
+      <!-- <section class="slidersec  sections">
+        <div class="slider-container-img sections">
+          <div class="slider-img">
+             <div class="slide-img"><img src="./img/barakonis.jpg" alt="Slide 1"></div>
+             <div class="slide-img"><img src="./img/kotejebiturebi.jpg" alt="Slide 2"></div>
+             <div class="slide-img"><img src="./img/shovibackground.jpg" alt="Slide 3"></div>
+         </div>
+      </div>
+      </section> -->
     </main>
 
     <!-- footer section -->
