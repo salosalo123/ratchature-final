@@ -7,31 +7,41 @@
   width: 100%;
   margin: 0 auto;
   font-family: "Roboto", sans-serif;
-
-  /* height: 800px; */
-}
-body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Serif Georgian', serif;
 }
 
 /* header */
 header {
   /* background-color: #191a19; */
   width: 100%;
-  height: 158px;
+  height: 80px;
+  background-color: transparent;
+  transition: background-color 0.5s;
   position: fixed;
   z-index: 1000;
+}
+.header{
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+.header.scrolled {
+  background-color: #db6f0b;
+}
+
+.content {
+  height: 20px; 
+  /* padding-top: 20px; */
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #db6f0b;
+  /* background-color: #db6f0b; */
   color: #fff;
   font-size: 18px;
   line-height: 20px;
-  padding: 10px 20px;
+  padding: 30px 20px;
+  margin-top: 30px;
   font-family: "Roboto", sans-serif;
   padding: 0 60px;
 }
@@ -40,6 +50,7 @@ header {
   width: 130px;
   height: 50px;
   border-radius: 5px;
+  margin-left: 120px;
 }
 .menu {
   display: flex;
@@ -70,6 +81,7 @@ header {
 
 .nav-links {
   display: flex;
+  margin-right: 100px;
 }
 
 .nav-links li {
@@ -108,6 +120,12 @@ header {
   background-repeat: no-repeat;
 }
 
+.sec2-divsall,
+.footer-div,
+.div-section1{
+  max-width: 90%;
+  
+}
 /* slider */
 .slidepage {
   width: 100%;
@@ -146,7 +164,7 @@ input {
 }
 
 .video {
-  margin-right: -100px;
+  margin-right: -200px;
   margin-top: 110px;
   width: 50%;
   height: 80%;
@@ -162,6 +180,7 @@ input {
 }
 .left-div {
   padding-top: 10%;
+  margin-left: 50px;
   width: 90%;
   height: 800px;
   display: flex;
@@ -173,7 +192,7 @@ input {
   margin-left: 20px;
 }
 h1 {
-  font-size: 48px;
+  font-size:38px;
   font-weight: 600;
   margin-bottom: 20px;
   color: #db6f0b;
@@ -255,7 +274,7 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 900px;
+  height: 100%;
   background-image: linear-gradient(
       to right,
       rgb(46, 42, 42),
@@ -289,7 +308,6 @@ h1 {
 .photo-container {
   width: 300px;
   height: 300px;
-  margin: 0 auto;
   text-align: center;
   cursor: pointer;
   border-radius: 8px;
@@ -306,7 +324,7 @@ h1 {
   width: 250px;
   height: 250px;
   background-color: #edac6e;
-  margin: 10px;
+  margin: 20px;
   transition: transform 1.3s ease;
   cursor: pointer;
   position: relative;
@@ -332,12 +350,7 @@ h1 {
   border-radius: 50px;
 }
 
-/* #searchResult {
-  padding: 10px;
-  border: 1px solid #ccc;
-  color: #eaedeb;
-} */
-/* footer */
+
 
 footer {
   background-color: #f2ebeff7;
@@ -767,3 +780,50 @@ h3 {
   padding: 10px;
   background-color: #ffffff;
 }
+
+
+/* filter */
+.section3{
+  text-align: center;
+}
+
+.filter-container {
+  margin: 0 auto;
+  padding-top: 20px;
+  height: 300px;
+  background-color: #bd8427;
+}
+
+.filter-btn-racha {
+  font-size: 16px;
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.filter-btn-racha.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.filter-item-racha {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.search-container{
+  text-align: center;
+  width: 300px;
+  
+}
+#searchResult{
+  margin-bottom: 30px;
+  color: #edac6e;
+}
+
+
+
+
