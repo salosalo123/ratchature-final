@@ -112,6 +112,9 @@ section1 */
     width: 100%;
     height: 50%;
   }
+  .left-div{
+    margin-left: 10px;
+  }
   h1 {
     font-size: 24px;
   }
@@ -170,6 +173,12 @@ section1 */
     margin-right: 10px;
     width: 200px;
   }
+  .nav-links{
+    margin-right: 0;
+  }
+  .logopict{
+    margin-left: 0;
+  }
  
 
 }
@@ -186,6 +195,9 @@ section1 */
   .tltle {
     width: 90%;
     margin-left: 0px;
+  }
+  .left-div{
+    margin-left: 20px;
   }
   h1 {
     font-size: 26px;
@@ -215,7 +227,12 @@ section1 */
   .vine-page{
     background-color: #f9c89b;
   }
-  
+  .nav-links{
+    margin-right: 0;
+  }
+  .logopict{
+    margin-left: 0;
+  }
   
 }
 
@@ -243,15 +260,24 @@ section1 */
     width: 40%;
     height: 60%;
   }
+  .nav-links{
+    margin-right: 0;
+  }
+  .logopict{
+    margin-left: 0;
+  }
 }
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   h1 {
-    font-size: 34px;
+    font-size: 32px;
   }
 
   .title-paragrap {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 400px;
+    margin-right: 0 ;
   }
   .registration-form {
     margin-top: 20%;
@@ -259,5 +285,26 @@ section1 */
     left: 30%;
     width: 30%;
     height: 50%;
+  }
+  .sections {
+   height: 100%;
+  }
+  .nav-links{
+    margin-right: 0;
+  }
+  .logopict{
+    margin-left: 0;
+  }
+}
+@media (min-width: 1440px) and (max-width: 1600px){
+  h1 {
+    font-size: 30px;
+    
+  }
+  .title-paragrap {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 400px;
+    margin-right: 0 ;
   }
 }
