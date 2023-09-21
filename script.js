@@ -346,3 +346,25 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+
+// filter
+const filterButtons = document.querySelectorAll('.filter-btn-racha');
+const filterItems = document.querySelectorAll('.filter-item-racha ');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filterValue = button.dataset.filter;
+
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        filterItems.forEach(item => {
+            item.style.display = 'none';
+
+            if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                item.style.display = 'block';
+            }
+        });
+    });
+});
