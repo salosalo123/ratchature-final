@@ -14,19 +14,34 @@
 header {
   /* background-color: #191a19; */
   width: 100%;
-  height: 158px;
+  height: 80px;
+  background-color: transparent;
+  transition: background-color 0.5s;
   position: fixed;
   z-index: 1000;
+}
+.header{
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+.header.scrolled {
+  background-color: #db6f0b;
+}
+
+.content {
+  height: 20px; 
+  /* padding-top: 20px; */
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #db6f0b;
+  /* background-color: #db6f0b; */
   color: #fff;
   font-size: 18px;
   line-height: 20px;
-  padding: 10px 20px;
+  padding: 30px 20px;
+  margin-top: 30px;
   font-family: "Roboto", sans-serif;
   padding: 0 60px;
 }
