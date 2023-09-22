@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Smit's Wine - Quality wines from Italy" />
-    <meta name="keywords" content="wine, Italy, vineyard, quality, red wine, white wine" />
+    <meta
+      name="keywords"
+      content="wine, Italy, vineyard, quality, red wine, white wine"
+    />
     <meta name="author" content="Smit's Wine" />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="./css/reset.css" />
@@ -62,43 +65,39 @@
 
     <!-- main section -->
     <main>
-      <section class="slidepage  slide-page">
+      <section class="slidepage slide-page">
+        <div class="containerjs">
+          <h1>Jsone</h1>
 
-        
-  <div class="containerjs">
-    <h1> Jsone</h1>
+          <div>
+            <h2>GET Data</h2>
+            <button onclick="getData()">Get Data</button>
+            <div id="getDataResult"></div>
+          </div>
 
-    <div>
-        <h2>GET Data</h2>
-        <button onclick="getData()">Get Data</button>
-        <div id="getDataResult"></div>
-    </div>
+          <div>
+            <h2>POST Data</h2>
+            <input type="text" id="postInput" placeholder="Enter data" />
+            <button onclick="postData()">Post Data</button>
+            <div id="postDataResult"></div>
+          </div>
 
-    <div>
-        <h2>POST Data</h2>
-        <input type="text" id="postInput" placeholder="Enter data">
-        <button onclick="postData()">Post Data</button>
-        <div id="postDataResult"></div>
-    </div>
+          <div>
+            <h2>DELETE Data</h2>
+            <input type="text" id="deleteInput" placeholder="Enter ID" />
+            <button onclick="deleteData()">Delete Data</button>
+            <div id="deleteDataResult"></div>
+          </div>
+        </div>
 
-    <div>
-        <h2>DELETE Data</h2>
-        <input type="text" id="deleteInput" placeholder="Enter ID">
-        <button onclick="deleteData()">Delete Data</button>
-        <div id="deleteDataResult"></div>
-    </div>
-</div>
-
-       
-  <!-- <div class="slider-container2">
+        <!-- <div class="slider-container2">
     <div class="slider2">
         <div class="slide2"><img src="./img/barakonis.jpg" alt="Slide 1"></div>
         <div class="slide2"><img src="./img/kotejebiturebi.jpg" alt="Slide 2"></div>
         <div class="slide2"><img src="./img/shovibackground.jpg" alt="Slide 3"></div>
     </div>
 </div> -->
-
-    </section>
+      </section>
     </main>
 
     <!-- footer section -->
