@@ -1,19 +1,16 @@
-'use strict';
-
-
+"use strict";
 
 // header
-window.addEventListener('scroll', function() {
-  var header = document.querySelector('.header');
-  var scrollPosition = window.scrollY;
+window.addEventListener("scroll", function () {
+  const header = document.querySelector(".header");
+  const scrollPosition = window.scrollY;
 
   if (scrollPosition > 50) {
-      header.classList.add('scrolled');
+    header.classList.add("scrolled");
   } else {
-      header.classList.remove('scrolled');
+    header.classList.remove("scrolled");
   }
 });
-
 
 // burger icon
 
@@ -43,12 +40,12 @@ document.querySelector(".slide").addEventListener("mouseout", function () {
 // registration
 
 function openForm() {
-  var form = document.getElementById("registrationForm");
+  const form = document.getElementById("registrationForm");
   form.style.top = "0%";
 }
 
 function closeForm() {
-  var form = document.getElementById("registrationForm");
+  const form = document.getElementById("registrationForm");
   form.style.top = "-100%";
 }
 
@@ -60,11 +57,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // slide right
 document.addEventListener("DOMContentLoaded", function () {
-  var openFormButton = document.getElementById("openForm-upload");
-  var slideContainer = document.querySelector(".slide-container-upload");
-  var slideContent = document.querySelector(".slide-content-upload");
-  var closeButton = document.getElementById("closeButton-upload");
-  var minimizeButton = document.getElementById("minimizeButton-upload");
+  const openFormButton = document.getElementById("openForm-upload");
+  const slideContainer = document.querySelector(".slide-container-upload");
+  const slideContent = document.querySelector(".slide-content-upload");
+  const closeButton = document.getElementById("closeButton-upload");
+  const minimizeButton = document.getElementById("minimizeButton-upload");
 
   openFormButton.addEventListener("click", function () {
     slideContainer.style.left = "0";
@@ -83,19 +80,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* chaches page */
 document.addEventListener("DOMContentLoaded", function () {
-  var seeMoreBtns = document.querySelectorAll(".see-more-btn");
-  var closeBtns = document.querySelectorAll(".close-btn-info");
+  const seeMoreBtns = document.querySelectorAll(".see-more-btn");
+  const closeBtns = document.querySelectorAll(".close-btn-info");
 
   seeMoreBtns.forEach(function (btn, index) {
     btn.addEventListener("click", function () {
-      var infoDetails = document.querySelectorAll(".info-details")[index];
+      const infoDetails = document.querySelectorAll(".info-details")[index];
       infoDetails.style.display = "block";
     });
   });
 
   closeBtns.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var infoDetails = this.parentElement;
+      const infoDetails = this.parentElement;
       infoDetails.style.display = "none";
     });
   });
@@ -121,8 +118,8 @@ function shrinkBoxes() {
 document
   .getElementById("registrationForm1")
   .addEventListener("input", function (event) {
-    var element = event.target;
-    var statusElement = document.getElementById(element.id + "Error");
+    const element = event.target;
+    const statusElement = document.getElementById(element.id + "Error");
     if (element.checkValidity()) {
       statusElement.innerText = "";
     } else {
@@ -131,7 +128,7 @@ document
   });
 
 document.getElementById("showPassword").addEventListener("change", function () {
-  var passwordInput = document.getElementById("password");
+  const passwordInput = document.getElementById("password");
   if (this.checked) {
     passwordInput.type = "text";
   } else {
@@ -140,8 +137,8 @@ document.getElementById("showPassword").addEventListener("change", function () {
 });
 
 document.getElementById("submitButton").addEventListener("click", function () {
-  var isValid = true;
-  var formElements = document.getElementById("registrationForm1").elements;
+  const isValid = true;
+  const formElements = document.getElementById("registrationForm1").elements;
   for (var i = 0; i < formElements.length; i++) {
     if (!formElements[i].checkValidity()) {
       isValid = false;
@@ -160,7 +157,7 @@ document.getElementById("submitButton").addEventListener("click", function () {
 
 // divreg
 document.getElementById("toggleButton").addEventListener("click", function () {
-  var formContainer = document.getElementById("registrationFormContainer");
+  const formContainer = document.getElementById("registrationFormContainer");
   if (
     formContainer.style.display === "none" ||
     formContainer.style.display === ""
@@ -175,10 +172,10 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 
 // *****
 document.addEventListener("DOMContentLoaded", function () {
-  var goToRegistrationBussn = document.getElementById(
+  const goToRegistrationBussn = document.getElementById(
     "goToRegistrationbussn"
   );
-  var goBackButton = document.getElementById("goBack");
+  const goBackButton = document.getElementById("goBack");
 
   if (goToRegistrationbussn) {
     goToRegistrationBussn.addEventListener("click", function () {
@@ -229,10 +226,10 @@ function goToAnotherPageSlide() {
 
 // ***search****
 function search() {
-  var searchInput = document.getElementById("searchInput");
-  var searchResult = document.getElementById("searchResult");
+  const searchInput = document.getElementById("searchInput");
+  const searchResult = document.getElementById("searchResult");
 
-  var searchTerm = searchInput.value.trim();
+  const searchTerm = searchInput.value.trim();
 
   if (searchTerm !== "") {
     searchResult.innerHTML = `Result for: <strong>${searchTerm}</strong>`;
@@ -242,7 +239,6 @@ function search() {
 }
 
 // json
-
 
 // async function getData() {
 //   try {
@@ -301,8 +297,6 @@ function search() {
 //   }
 // }
 
-
-
 //  *******accordion**
 
 // document.addEventListener("DOMContentLoaded", function () {
@@ -339,7 +333,6 @@ function search() {
 //     }
 //   });
 // });
-
 
 // // filterbig
 // var filterButtons = document.querySelectorAll('.filter-btn-racha');
