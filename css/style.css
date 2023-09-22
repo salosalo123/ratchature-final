@@ -354,6 +354,12 @@ h1 {
 
 footer {
   background-color: #f2ebeff7;
+  background-image:linear-gradient(
+    to right,
+    rgb(20, 19, 19),
+    rgba(33, 23, 23, 0.61),
+    rgba(48, 11, 11, 0.199)
+  ), url(../img/fire.png);
   height: 250px;
   color: #fff;
   padding: 20px 0;
