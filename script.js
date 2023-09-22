@@ -139,7 +139,7 @@ document.getElementById("showPassword").addEventListener("change", function () {
 document.getElementById("submitButton").addEventListener("click", function () {
   const isValid = true;
   const formElements = document.getElementById("registrationForm1").elements;
-  for (var i = 0; i < formElements.length; i++) {
+  for (let i = 0; i < formElements.length; i++) {
     if (!formElements[i].checkValidity()) {
       isValid = false;
       break;
