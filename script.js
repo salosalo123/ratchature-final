@@ -122,7 +122,7 @@ document
     if (element.checkValidity()) {
       statusElement.innerText = "";
     } else {
-      statusElement.innerText = "Invalid " + element.id;
+      statusElement.innerText = "შეცდომაა " + element.id;
     }
   });
 
