@@ -1,7 +1,11 @@
+'use strict';
+
+
+
 // header
 window.addEventListener('scroll', function() {
-  const header = document.querySelector('.header');
-  const scrollPosition = window.scrollY;
+  var header = document.querySelector('.header');
+  var scrollPosition = window.scrollY;
 
   if (scrollPosition > 50) {
       header.classList.add('scrolled');
@@ -39,12 +43,12 @@ document.querySelector(".slide").addEventListener("mouseout", function () {
 // registration
 
 function openForm() {
-  const form = document.getElementById("registrationForm");
+  var form = document.getElementById("registrationForm");
   form.style.top = "0%";
 }
 
 function closeForm() {
-  const form = document.getElementById("registrationForm");
+  var form = document.getElementById("registrationForm");
   form.style.top = "-100%";
 }
 
@@ -56,11 +60,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // slide right
 document.addEventListener("DOMContentLoaded", function () {
-  const openFormButton = document.getElementById("openForm-upload");
-  const slideContainer = document.querySelector(".slide-container-upload");
-  const slideContent = document.querySelector(".slide-content-upload");
-  const closeButton = document.getElementById("closeButton-upload");
-  const minimizeButton = document.getElementById("minimizeButton-upload");
+  var openFormButton = document.getElementById("openForm-upload");
+  var slideContainer = document.querySelector(".slide-container-upload");
+  var slideContent = document.querySelector(".slide-content-upload");
+  var closeButton = document.getElementById("closeButton-upload");
+  var minimizeButton = document.getElementById("minimizeButton-upload");
 
   openFormButton.addEventListener("click", function () {
     slideContainer.style.left = "0";
@@ -79,19 +83,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* chaches page */
 document.addEventListener("DOMContentLoaded", function () {
-  const seeMoreBtns = document.querySelectorAll(".see-more-btn");
-  const closeBtns = document.querySelectorAll(".close-btn-info");
+  var seeMoreBtns = document.querySelectorAll(".see-more-btn");
+  var closeBtns = document.querySelectorAll(".close-btn-info");
 
   seeMoreBtns.forEach(function (btn, index) {
     btn.addEventListener("click", function () {
-      const infoDetails = document.querySelectorAll(".info-details")[index];
+      var infoDetails = document.querySelectorAll(".info-details")[index];
       infoDetails.style.display = "block";
     });
   });
 
   closeBtns.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      const infoDetails = this.parentElement;
+      var infoDetails = this.parentElement;
       infoDetails.style.display = "none";
     });
   });
@@ -171,10 +175,10 @@ document.getElementById("toggleButton").addEventListener("click", function () {
 
 // *****
 document.addEventListener("DOMContentLoaded", function () {
-  const goToRegistrationBussn = document.getElementById(
+  var goToRegistrationBussn = document.getElementById(
     "goToRegistrationbussn"
   );
-  const goBackButton = document.getElementById("goBack");
+  var goBackButton = document.getElementById("goBack");
 
   if (goToRegistrationbussn) {
     goToRegistrationBussn.addEventListener("click", function () {
@@ -222,86 +226,13 @@ function goToAnotherPageTaxi() {
 function goToAnotherPageSlide() {
   window.location.href = "slide.html";
 }
-// ***slider**//
-// const sliderImg = document.querySelector('.slider2');
-//         const slidesImg = document.querySelectorAll('.slide2');
-//         let currentIndex = 0;
-
-//         function showSlide(index) {
-//             sliderImg.style.transform = `translateX(-${index * 100}%)`;
-//         }
-
-//         function nextSlide() {
-//             currentIndex = (currentIndex + 1) % slidesImg.length;
-//             showSlide(currentIndex);
-//         }
-
-//         setInterval(nextSlide, 2000);
-
-// json
-async function getData() {
-  try {
-    const response = await axios.get(
-      "https://jsonplaceholder.typicode.com/users"
-    );
-    const data = response.data;
-    document.getElementById("getDataResult").innerHTML = JSON.stringify(
-      data,
-      null,
-      2
-    );
-  } catch (error) {
-    console.error("Error fetching data:", error);
-  }
-}
-
-async function postData() {
-  const inputData = document.getElementById("postInput").value;
-
-  try {
-    const response = await axios.post(
-      "https://jsonplaceholder.typicode.com/posts",
-      {
-        title: inputData,
-        body: "Sample Body",
-        userId: 1,
-      }
-    );
-    const data = response.data;
-    document.getElementById("postDataResult").innerHTML = JSON.stringify(
-      data,
-      null,
-      2
-    );
-  } catch (error) {
-    console.error("Error posting data:", error);
-  }
-}
-
-async function deleteData() {
-  const id = document.getElementById("deleteInput").value;
-
-  try {
-    const response = await axios.delete(
-      `https://jsonplaceholder.typicode.com/posts/${id}`
-    );
-    const data = response.data;
-    document.getElementById("deleteDataResult").innerHTML = JSON.stringify(
-      data,
-      null,
-      2
-    );
-  } catch (error) {
-    console.error("Error deleting data:", error);
-  }
-}
 
 // ***search****
 function search() {
-  const searchInput = document.getElementById("searchInput");
-  const searchResult = document.getElementById("searchResult");
+  var searchInput = document.getElementById("searchInput");
+  var searchResult = document.getElementById("searchResult");
 
-  const searchTerm = searchInput.value.trim();
+  var searchTerm = searchInput.value.trim();
 
   if (searchTerm !== "") {
     searchResult.innerHTML = `Result for: <strong>${searchTerm}</strong>`;
@@ -310,61 +241,123 @@ function search() {
   }
 }
 
+// json
+
+
+// async function getData() {
+//   try {
+//     var response = await axios.get(
+//       "https://jsonplaceholder.typicode.com/users"
+//     );
+//     var data = response.data;
+//     document.getElementById("getDataResult").innerHTML = JSON.stringify(
+//       data,
+//       null,
+//       2
+//     );
+//   } catch (error) {
+//     console.error("Error fetching data:", error);
+//   }
+// }
+
+// async function postData() {
+//   const inputData = document.getElementById("postInput").value;
+
+//   try {
+//     var response = await axios.post(
+//       "https://jsonplaceholder.typicode.com/posts",
+//       {
+//         title: inputData,
+//         body: "Sample Body",
+//         userId: 1,
+//       }
+//     );
+//     var data = response.data;
+//     document.getElementById("postDataResult").innerHTML = JSON.stringify(
+//       data,
+//       null,
+//       2
+//     );
+//   } catch (error) {
+//     console.error("Error posting data:", error);
+//   }
+// }
+
+// async function deleteData() {
+//   var id = document.getElementById("deleteInput").value;
+
+//   try {
+//     var response = await axios.delete(
+//       `https://jsonplaceholder.typicode.com/posts/${id}`
+//     );
+//     var data = response.data;
+//     document.getElementById("deleteDataResult").innerHTML = JSON.stringify(
+//       data,
+//       null,
+//       2
+//     );
+//   } catch (error) {
+//     console.error("Error deleting data:", error);
+//   }
+// }
+
+
+
 //  *******accordion**
 
-document.addEventListener("DOMContentLoaded", function () {
-  const accordionItems = document.querySelectorAll(".accordion-item");
+// document.addEventListener("DOMContentLoaded", function () {
+//   var accordionItemsAcordion = document.querySelectorAll(".accordion-item");
 
-  accordionItems.forEach((item) => {
-    const header1 = item.querySelector(".accordion-header");
-    const content1 = item.querySelector(".accordion-content");
+//   accordionItemsAcordion.forEach((item) => {
+//     var header1Acordion = item.querySelector(".accordion-header");
+//     var content1Acordion = item.querySelector(".accordion-content");
 
-    header1.addEventListener("click", function () {
-      content1.style.display =
-        content1.style.display === "none" ? "block" : "none";
-    });
-  });
-});
+//     header1Acordion.addEventListener("click", function () {
+//       content1Acordion.style.display =
+//         content1Acordion.style.display === "none" ? "block" : "none";
+//     });
+//   });
+// });
 
-// *****filter
-document.addEventListener("DOMContentLoaded", function () {
-  const filterInput = document.getElementById("filterInput");
-  const itemList = document.getElementById("itemList");
-  const items = itemList.getElementsByTagName("li");
+// // *****filter1
+// document.addEventListener("DOMContentLoaded", function () {
+//   var filterInput = document.getElementById("filterInput");
+//   var itemListFilter = document.getElementById("itemList");
+//   var itemsFilter = itemListFilter.getElementsByTagName("li");
 
-  filterInput.addEventListener("input", function () {
-    const searchTerm = this.value.toLowerCase();
+//   filterInput.addEventListener("input", function () {
+//     var searchTermFilter = this.value.toLowerCase();
 
-    for (let i = 0; i < items.length; i++) {
-      const itemText = items[i].textContent.toLowerCase();
+//     for (let i = 0; i < itemsFilter.length; i++) {
+//       var itemText = itemsFilter[i].textContent.toLowerCase();
 
-      if (itemText.includes(searchTerm)) {
-        items[i].style.display = "block";
-      } else {
-        items[i].style.display = "none";
-      }
-    }
-  });
-});
+//       if (itemText.includes(searchTermFilter)) {
+//         itemsFilter[i].style.display = "block";
+//       } else {
+//         itemsFilter[i].style.display = "none";
+//       }
+//     }
+//   });
+// });
 
 
-// filter
-const filterButtons = document.querySelectorAll('.filter-btn-racha');
-const filterItems = document.querySelectorAll('.filter-item-racha ');
+// // filterbig
+// var filterButtons = document.querySelectorAll('.filter-btn-racha');
+// var filterItems = document.querySelectorAll('.filter-item-racha ');
 
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const filterValue = button.dataset.filter;
+// filterButtons.forEach(button => {
+//     button.addEventListener('click', () => {
+//         const filterValue = button.dataset.filter;
 
-        filterButtons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+//         filterButtons.forEach(btn => btn.classList.remove('active'));
+//         button.classList.add('active');
 
-        filterItems.forEach(item => {
-            item.style.display = 'none';
+//         filterItems.forEach(item => {
+//             item.style.display = 'none';
 
-            if (filterValue === 'all' || item.classList.contains(filterValue)) {
-                item.style.display = 'block';
-            }
-        });
-    });
-});
+//             if (filterValue === 'all' || item.classList.contains(filterValue)) {
+//                 item.style.display = 'block';
+//             }
+//         });
+//     });
+// });
