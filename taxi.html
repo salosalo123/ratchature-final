@@ -3,12 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Smit's Wine - Quality wines from Italy" />
+    <meta name="author" content="Ratcha tour" />
+    <meta name="robots" content="index, follow" />
     <meta
-      name="keywords"
-      content="wine, Italy, vineyard, quality, red wine, white wine"
+      property="og:url"
+      content="https://salosalo123.github.io/ratchature-final/"
     />
-    <meta name="author" content="Smit's Wine" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="My project about Ratcha tour" />
+    <meta
+      property="og:description"
+      content="Tourists can see snowy mountains, forests, local cultural monuments, taste delicious wine. Also  residents of Racha can set up their own businesses, which will support businesses in Ratcha. "
+    />
+    <meta
+      property="og:image"
+      content="https://salosalo123.github.io/ratchature-final/img/katiwveraturebi.jpg"
+    />
     <meta name="robots" content="index, follow" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
@@ -20,7 +30,9 @@
     <header class="header">
       <nav class="navbar">
         <div class="logo">
-          <img class="logopict" src="./img/logoratchatour.JPG" alt="" />
+          <a href="./index.html">
+            <img class="logopict" src="./img/logoratchatour.JPG" alt=""
+          /></a>
         </div>
         <div class="menu" id="menu">
           <div class="burger-icon burger-act" id="burger-icon">
@@ -47,18 +59,17 @@
           <li class="register-btn"><a href="#">დარეგისტრირდი</a></li>
         </ul>
       </nav>
-
       <div class="registration-form" id="registrationForm">
         <div class="close-btn" onclick="closeForm()">X</div>
-        <h2>Register</h2>
+        <!-- <h2>რეგისტრაცია</h2> -->
         <form action="#">
-          <label for="username">Username</label>
+          <label for="username">მომხმარებლის სახელი</label>
           <input type="text" id="username" name="username" required />
-          <label for="email">Email</label>
+          <label for="email">იმეილი</label>
           <input type="email" id="email" name="email" required />
-          <label for="password">Password</label>
+          <label for="password">პაროლი</label>
           <input type="password" id="password" name="password" required />
-          <button type="submit">Register</button>
+          <button type="submit">რეგისტრაცია</button>
         </form>
       </div>
     </header>
