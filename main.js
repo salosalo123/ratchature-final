@@ -23,59 +23,59 @@ filterButtons.forEach((button) => {
 
 // json
 
-// async function getData() {
-//   try {
-//     var response = await axios.get(
-//       "https://jsonplaceholder.typicode.com/users"
-//     );
-//     var data = response.data;
-//     document.getElementById("getDataResult").innerHTML = JSON.stringify(
-//       data,
-//       null,
-//       2
-//     );
-//   } catch (error) {
-//     console.error("Error fetching data:", error);
-//   }
-// }
+async function getData() {
+  try {
+    var response = await axios.get(
+      "https://jsonplaceholder.typicode.com/users"
+    );
+    var data = response.data;
+    document.getElementById("getDataResult").innerHTML = JSON.stringify(
+      data,
+      null,
+      2
+    );
+  } catch (error) {
+    console.error("Error fetching data:", error);
+  }
+}
 
-// async function postData() {
-//   const inputData = document.getElementById("postInput").value;
+async function postData() {
+  const inputData = document.getElementById("postInput").value;
 
-//   try {
-//     var response = await axios.post(
-//       "https://jsonplaceholder.typicode.com/posts",
-//       {
-//         title: inputData,
-//         body: "Sample Body",
-//         userId: 1,
-//       }
-//     );
-//     var data = response.data;
-//     document.getElementById("postDataResult").innerHTML = JSON.stringify(
-//       data,
-//       null,
-//       2
-//     );
-//   } catch (error) {
-//     console.error("Error posting data:", error);
-//   }
-// }
+  try {
+    var response = await axios.post(
+      "https://jsonplaceholder.typicode.com/posts",
+      {
+        title: inputData,
+        body: "Sample Body",
+        userId: 1,შს
+      }
+    );
+    var data = response.data;
+    document.getElementById("postDataResult").innerHTML = JSON.stringify(
+      data,
+      null,
+      2
+    );
+  } catch (error) {
+    console.error("Error posting data:", error);
+  }
+}
 
-// async function deleteData() {
-//   var id = document.getElementById("deleteInput").value;
+async function deleteData() {
+  var id = document.getElementById("deleteInput").value;
 
-//   try {
-//     var response = await axios.delete(
-//       `https://jsonplaceholder.typicode.com/posts/${id}`
-//     );
-//     var data = response.data;
-//     document.getElementById("deleteDataResult").innerHTML = JSON.stringify(
-//       data,
-//       null,
-//       2
-//     );
-//   } catch (error) {
-//     console.error("Error deleting data:", error);
-//   }
-// }
+  try {
+    var response = await axios.delete(
+      `https://jsonplaceholder.typicode.com/posts/${id}`
+    );
+    var data = response.data;
+    document.getElementById("deleteDataResult").innerHTML = JSON.stringify(
+      data,
+      null,
+      2
+    );
+  } catch (error) {
+    console.error("Error deleting data:", error);
+  }
+}
