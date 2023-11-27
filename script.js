@@ -222,6 +222,9 @@ function goToAnotherPageTaxi() {
 function goToAnotherPageSlide() {
   window.location.href = "slide.html";
 }
+function goToAnotherPageloGin() {
+  window.location.href = "login.html";
+}
 
 // ***search****
 function search() {

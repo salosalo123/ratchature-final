@@ -79,3 +79,22 @@ async function deleteData() {
     console.error("Error deleting data:", error);
   }
 }
+
+
+
+
+
+//login section
+function validateLogin() {
+  var usernameLogin= document.getElementById('username').value;
+  var passwordLogin = document.getElementById('password').value;
+  var errorMessageLogin = document.getElementById('error-message');
+
+  // Simple validation
+  if (usernameLogin === 'demo' && passwordLogin === 'password') {
+      errorMessageLogin.innerHTML = '';
+      alert('Login successful!');
+  } else {
+      errorMessageLogin.innerHTML = 'Invalid username or password. Please try again.';
+  }
+}

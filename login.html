@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ratcha tour" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      property="og:url"
+      content="https://salosalo123.github.io/ratchature-final/"
+    />
+    <meta property="og:type" content="Website" />
+    <meta property="og:title" content="My project about Ratcha tour" />
+    <meta
+      property="og:description"
+      content="Tourists can see snowy mountains, forests, local cultural monuments, taste delicious wine. Also  residents of Racha can set up their own businesses, which will support businesses in Ratcha. "
+    />
+    <meta
+      property="og:image"
+      content="https://salosalo123.github.io/ratchature-final/img/katiwveraturebi.jpg"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="icon" href="./img/logoratchatour.JPG">
+    <title>Ratcha Tour</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <nav class="navbar nav-list content">
+        <div class="logo">
+          <a href="./index.html">
+            <img class="logopict" src="./img/logoratchatour.JPG" alt=""
+          /></a>
+        </div>
+        <div class="menu" id="menu">
+          <div class="burger-icon burger-act" id="burger-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="close-icon" id="close-icon">&times;</div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li class="active-li"><a href="./index.html">მთავარი</a></li>
+          <li><a href="./chaches.html">კულტურული ძეგლები</a></li>
+          <li><a href="./hotels.html">სასტუმროები</a></li>
+          <!-- <li class="has-submenu">
+            <span>სხვა</span>
+            <ul class="submenu">
+              <li><a href="turebi.html">ტურები</a></li>
+              <li><a href="art.html">ხელოვნება</a></li>
+              <li><a href="restorant.html">რესტორნები</a></li>
+              <li><a href="vine.html">ღვინის მარნები</a></li>
+              <li><a href="taxi.html">ყიდვა გაყიდვა</a></li>
+            </ul>
+          </li> -->
+          <li class="register-btn"><a href="#">დარეგისტრირდი</a></li>
+          <li ><a href="./login.html">შესვლა</a></li>
+
+        </ul>
+      </nav>
+
+      <div class="registration-form" id="registrationForm">
+        <div class="close-btn" onclick="closeForm()">X</div>
+        <!-- <h2>რეგისტრაცია</h2> -->
+        <form action="#">
+          <label for="username">მომხმარებლის სახელი</label>
+          <input type="text" id="username" name="username" required />
+          <label for="email">იმეილი</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">პაროლი</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">რეგისტრაცია</button>
+        </form>
+      </div>
+    </header>
+
+
+    <!-- main sectiom -->
+    <main>
+        <section class="sections loginsect">
+
+          <div class="login-containerLogin">
+            <form id="loginFormLogin">
+                <h2>Login</h2>
+                <div class="input-groupLogin">
+                    <label class="labelLogin" for="username">Username:</label>
+                    <input class="inputLogin"  type="text" id="username" name="username" required>
+                </div>
+                <div class="input-groupLogin">
+                    <label class="labelLogin" for="password">Password:</label>
+                    <input class="inputLogin"  type="password" id="password" name="password" required>
+                </div>
+                <button class="buttonLogin"  type="button" onclick="validateLogin()">Login</button>
+                <p id="error-message"></p>
+            </form>
+        </div>
+  
+    </section>
+</main>
+
+    <!-- footer section -->
+    <footer class="section-footer">
+        <div class="footer-div">
+          <div class="slide-container">
+            <div class="slide">
+              <div class="contact">
+                <h2 class="tel-color">დაგვიკავშირდით</h2>
+                <br />
+                <p>
+                  <a class="tel-color" href="tel:+995555542045"> +995555542045</a>
+                </p>
+                <br />
+                <p>
+                  <a class="tel-color" href="mailto:ratchatour.info@gmail.com"
+                    >ratchatour.info@gmail.com</a
+                  >
+                </p>
+                <br />
+              </div>
+              <div class="social">
+                <!-- <h2>Follow Us</h2> -->
+                <div class="footer-social tel-color">
+                  <a
+                    href="https://www.facebook.com/salome.gogrichiani.37"
+                    target="_blank"
+                    ><img
+                      class="hover-icon"
+                      src="./img/facebook-round-svgrepo-com.svg"
+                      alt="Facebook"
+                  /></a>
+                  <a
+                    href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fsgogrichiani63%3Ffbclid%3DIwAR09G2jnksKP0cEF703azZqgf2RIy2EljMXMSTIWmvo1dhTrRIKCPiAXmaM&h=AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA"
+                    target="_blank"
+                    ><img
+                      class="hover-icon"
+                      src="./img/twitter-svgrepo-com.svg"
+                      alt="Twitter"
+                  /></a>
+                  <a
+                    href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fsgogrichiani%3Futm_source%3Dqr%26igshid%3DMzNlNGNkZWQ4Mg%253D%253D%26fbclid%3DIwAR0l-5EjvMqI3o519ga4XxPDnwnmimLNhxBOZ4quDM76v_cyKkXurr8pH2g&h=AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA"
+                    target="_blank"
+                    ><img
+                      class="hover-icon"
+                      src="./img/instagram-svgrepo-com.svg"
+                      alt="Instagram"
+                  /></a>
+                  <a
+                    href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsalome-gogritchiani-7294b71b4%3Ffbclid%3DIwAR0BeuHCNXZtv_UtS8l5Yv4TaMV5VpxLhtLseiZR2_E1lbO-CjNDLFA5DsM&h=AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA"
+                    target="_blank"
+                    ><img
+                      class="hover-icon"
+                      src="./img/linkedin-svgrepo-com.svg"
+                      alt="LinkedIn"
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="all-rights">
+            <p class="all-raihtparag">
+              All Rights Reserved <span> &copy; 2023 "TechNinja"</span> Coding
+              School for <span> 1500 </span> Women Business and Technology
+              University.
+            </p>
+          </div>
+          <div class="section footer-flex">
+            <div class="footer-social facebook">
+              <a
+                href="https://www.facebook.com/salome.gogrichiani.37"
+                target="_blank"
+                ><img
+                  class="hover-icon"
+                  src="./img/facebook-round-svgrepo-com.svg"
+                  alt="Facebook"
+              /></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fsgogrichiani63%3Ffbclid%3DIwAR09G2jnksKP0cEF703azZqgf2RIy2EljMXMSTIWmvo1dhTrRIKCPiAXmaM&h=AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA"
+                target="_blank"
+                ><img
+                  class="hover-icon"
+                  src="./img/twitter-svgrepo-com.svg"
+                  alt="Twitter"
+              /></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fsgogrichiani%3Futm_source%3Dqr%26igshid%3DMzNlNGNkZWQ4Mg%253D%253D%26fbclid%3DIwAR0l-5EjvMqI3o519ga4XxPDnwnmimLNhxBOZ4quDM76v_cyKkXurr8pH2g&h=AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA"
+                target="_blank"
+                ><img
+                  class="hover-icon"
+                  src="./img/instagram-svgrepo-com.svg"
+                  alt="Instagram"
+              /></a>
+              <a
+                href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsalome-gogritchiani-7294b71b4%3Ffbclid%3DIwAR0BeuHCNXZtv_UtS8l5Yv4TaMV5VpxLhtLseiZR2_E1lbO-CjNDLFA5DsM&h=AT18tgYrYzQCln6SuJ5gnKRISNNS8c7fFqPZ7j7L9IEh0npVUsuI6gvTURO2RZ83C8mZrJN4L8U63Fwlpeuk6uIYw5N_sCX2RKUZvXiPHwbA92zzFEkzE3dBSy6dafe6TdrIPA"
+                target="_blank"
+                ><img
+                  class="hover-icon"
+                  src="./img/linkedin-svgrepo-com.svg"
+                  alt="LinkedIn"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./main.js"></script>
+      <script src="./script.js"></script>
+    </body>
+  </html>
+  
